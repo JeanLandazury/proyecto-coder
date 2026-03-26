@@ -1,0 +1,31 @@
+@use "../generales/variables" as *;
+
+.presentacion {
+  background-image: url(../img-coder-house/fondo-pc.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 30%;
+    text-align: center;
+
+    @include flex-sin;
+
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+      color: red;
+      font-weight: bold;
+    }
+
+    p {
+      color: rgb(220, 20, 27);
+    }
+  }
+
+  .servicios {
+    width: 150px;
+    height: 250px;
+  }
+}

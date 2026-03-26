@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 body{
       font-family: "Oswald", sans-serif;
       background-color: white;
-}
+} */
 
 p {
     color: blue;
@@ -34,10 +34,10 @@ p {
     font-family: "Oswald", sans-serif;
 }
 
-.logo{
+/* .logo{
     width: 150px;
     margin: 10px;
-}
+} */
 
 header ul{
     list-style: none ;
@@ -47,7 +47,7 @@ header ul{
     height: 100%;
 }
 
-nav{
+nav a{
     width: 25%;
         text-decoration: salmon;
          text-shadow: 1px 1px 4px;
@@ -84,30 +84,89 @@ h1{
     margin-bottom: 20%;
     font-size: 3rem;
     text-transform: uppercase;
+    animation-name: efecto;
+    animation-interaction-count: infinite;
+    animation-delay:0s;
+    animation-duration: 4s;
+
+}
+@keyframes efecto{
+  0%{
+    color:#6344ff;
+    transform: translateX(20px);
+
+  }
+  25%{
+    color: salmon;
+    transform: translateX(40px);
+  }
+  50%{
+    color: slateblue;
+    transform: translateX(60px);
+
+  }
+  75%{
+    color: sienna;}
+tranform: rotate(
+  20deg
+)
+100%{
+  color: slategray;
+}
 }
 
 
-.presentacion h1{
+h1:hover{
+  color: mediumblue;
+  transition: 2s;
+}
+
+.trasladar {
+  margin-top: 20px;
+  border: black solid 5px;
+  background-image: url(../img-coder-house/ingles.png);
+  background-size: cover;
+}
+
+.trasladar:hover{
+  transform: translate(-50px, -60px);
+  transition: 2s;
+}
+
+.rotar: hover{
+  transform: rotate(
+    45 deg
+  )
+}
+.sesgar:hover{
+  transform: skew(-20deg, -35deg)
+}
+
+/* .presentacion h1{
     text-align: center;
     text-decoration: underline;
     color:red ;
     font-weight:bold ;
-}
+} */
 
 .h-1{ color: blue ;
 
 } 
-.presentacion{
+/* .presentacion{
 background-image: url(../img-coder-house/fondo-pc.jpeg);
 display:flex;
 justify-content:center ;
 align-items: center;
-}
+} */
 
-.presentacion div {
+/* .presentacion div {
     width:30% ;
     text-align: center;
-}
+} */
+
+/* .presentacion p{
+  color: rgb(220, 20, 27);
+} */
 
 .icono-red {
   width: 100px;
@@ -203,21 +262,22 @@ align-items: center;
     grid-template-columns: 95%;
     grid-template-rows: 80px 100px 120px 100px 120px 100px;
   }
-  .servicios 
+  /* .servicios 
   {
     width: 150px;
     height: 250px;
-  }
+  } */
 
   .presentacion h1{
     text-align: center;
     text-decoration: underline;
     color:rgba(131, 182, 29, 0.255)
     font-weight:bold ;
-  align-items: center;
+  align-items:center;
     height: 100%;
     
 }
+
 
   body {
     background-color: lightskyblue;
@@ -231,3 +291,6 @@ align-items: center;
     background-color: lightcoral;
   }
 }
+
+.pcingles{
+  width: 100%;}

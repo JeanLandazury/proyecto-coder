@@ -1,0 +1,78 @@
+// paleta de colores 
+
+$bordo:#8E1616;
+$amarillo:#ffbc0d;
+$blanco:#FFFF;
+
+$font: family "Oswald", sans-serif;
+
+// extend
+.boton-rojo{
+    width: 200px;
+     font-family: $font;
+    background-color: $amarillo;
+   border:rgb(219, 49, 49) 2px soliod ;
+   color: $bordo;
+}
+.boton-verde{
+    @extend .boton-rojo;
+    border: greenyellow 2px solid;
+}
+
+// .boton-verde{
+//     width: 200px;
+//      font-family: $font;
+//     background-color: $amarillo;
+//    border:rgb(95, 193, 16) 2px soliod ;
+//    color: $bordo;
+// 
+
+// mixin
+// sin  parametros 
+
+$flex: flex;
+$center: center;
+
+/* MIXIN */
+@mixin flex-sin {
+  display: $flex;
+  justify-content: $center;
+  align-items: $center;
+}
+
+ul{
+    @include flex-sin;
+}
+
+
+// mixin
+// con  parametros   solo dentro del mixin
+
+@mixin flex-con ($direc, $justi, $align){
+    display: $flex;
+    flex-direction: $direc;
+    justify-content: $justi;
+    align-items: $align;
+
+}
+
+section{
+    @include flex-con (row, flex-start ,space-around )
+}
+
+header{
+    @include flex-con(column,center,flex-end )
+}
+
+@mixin tamanio ($ancho, $alto){
+width: $ancho;
+height: $alto;
+}
+
+img{
+    @include tamanio( 40%, auto);
+}
+
+card{
+    @include tamanio ( 500px, 200px);
+}

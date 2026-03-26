@@ -1,0 +1,6 @@
+@use "./generales/general";
+@use "./generales/header-footer";
+@use "./pages/index";
+@use "./pages/contacto";
+// media querie siempre al final
+@use "./generales/media-querie";

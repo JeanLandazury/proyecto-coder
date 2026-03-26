@@ -1,0 +1,124 @@
+.boton-rojo, .boton-verde {
+  width: 200px;
+  font-family: family "Oswald", sans-serif;
+  background-color: #ffbc0d;
+  border: rgb(219, 49, 49) 2px soliod;
+  color: #8E1616;
+}
+
+.boton-verde {
+  border: greenyellow 2px solid;
+}
+
+/* MIXIN */
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+img {
+  width: 40%;
+  height: auto;
+}
+
+card {
+  width: 500px;
+  height: 200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: family "Oswald", sans-serif;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: lightsalmon;
+}
+header .logo {
+  width: 150px;
+  margin: 10px;
+}
+header nav {
+  width: 25%;
+  text-decoration: salmon;
+  text-shadow: 1px 1px 4px;
+  text-transform: uppercase;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+header ul li a {
+  width: 25%;
+  text-decoration: salmon;
+  text-shadow: 1px 1px 4px;
+  text-transform: uppercase;
+}
+
+.presentacion {
+  background-image: url(../img-coder-house/fondo-pc.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentacion div {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentacion div h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+  font-weight: bold;
+}
+.presentacion div p {
+  color: rgb(220, 20, 27);
+}
+.presentacion .servicios {
+  width: 150px;
+  height: 250px;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

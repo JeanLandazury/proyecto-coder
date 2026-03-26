@@ -1,0 +1,42 @@
+// opara sumar el  header y variable y poder tener codigo debajo se necesita usar as*;
+
+@use "./variables" as*;
+
+
+header {
+  display:flex;
+  justify-content: space-between;
+  position:sticky;
+  top:0;
+  background-color: lightsalmon;
+
+  .logo {
+    width: 150px;
+    margin: 10px;
+  }
+
+  nav {
+    width: 25%;
+    text-decoration: salmon;
+    text-shadow: 1px 1px 4px;
+    text-transform: uppercase; }
+
+   ul{
+    list-style: none ;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100%;
+
+    li{
+
+      a{
+    width: 25%;
+        text-decoration: salmon;
+         text-shadow: 1px 1px 4px;
+             text-transform: uppercase;
+    }
+  }
+}
+
+}
