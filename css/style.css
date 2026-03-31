@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* *{
     margin: 0;
@@ -11,7 +11,7 @@ body{
       background-color: white;
 } */
 
-p {
+/* p {
     color: blue;
 }
 
@@ -38,7 +38,7 @@ p {
     width: 150px;
     margin: 10px;
 } */
-
+/* 
 header ul{
     list-style: none ;
     display: flex;
@@ -140,7 +140,7 @@ h1:hover{
 }
 .sesgar:hover{
   transform: skew(-20deg, -35deg)
-}
+} */
 
 /* .presentacion h1{
     text-align: center;
@@ -149,9 +149,9 @@ h1:hover{
     font-weight:bold ;
 } */
 
-.h-1{ color: blue ;
+/* .h-1{ color: blue ;
 
-} 
+}  */
 /* .presentacion{
 background-image: url(../img-coder-house/fondo-pc.jpeg);
 display:flex;
@@ -167,7 +167,7 @@ align-items: center;
 /* .presentacion p{
   color: rgb(220, 20, 27);
 } */
-
+/* 
 .icono-red {
   width: 100px;
   height: 100px;
@@ -203,8 +203,8 @@ align-items: center;
 .titulo-grid {
   grid-area: titulo;
   text-decoration: underline;
-  color: brown;
-}
+  color: brown; */
+/* }
 
 .pc-grid {
   grid-area: pc;
@@ -237,7 +237,7 @@ align-items: center;
   object-fit: cover;
 }
 /* media  quires cell */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
       header{
         flex-direction: column;
         justify-content: center;
@@ -261,22 +261,22 @@ align-items: center;
 
     grid-template-columns: 95%;
     grid-template-rows: 80px 100px 120px 100px 120px 100px;
-  }
+  } */
   /* .servicios 
   {
     width: 150px;
     height: 250px;
   } */
-
+/* 
   .presentacion h1{
     text-align: center;
     text-decoration: underline;
     color:rgba(131, 182, 29, 0.255)
     font-weight:bold ;
   align-items:center;
-    height: 100%;
+    height: 100%; */
     
-}
+/* }
 
 
   body {
@@ -284,7 +284,7 @@ align-items: center;
   }
 }
 /* media  quires cell */
-
+/* 
 @media (min-width: 481px) and (max-width: 768px) {
 
   body {
@@ -292,5 +292,5 @@ align-items: center;
   }
 }
 
-.pcingles{
-  width: 100%;}
+/* .pcingles{ */
+  /* width: 100%; */
