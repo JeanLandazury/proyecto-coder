@@ -1,0 +1,38 @@
+@use "../generales/header-footer" as*;
+@use "../generales/variables" as*;
+// AREAS
+.titulo-grid {
+  grid-area: titulo;
+  text-decoration: underline;
+  color: brown;
+}
+
+.pc-grid {
+  grid-area: pc;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.sistemas-grid {
+  grid-area: sistemas;
+}
+
+.parrafo-uno {
+  grid-area: texto1;
+  width: 40%;
+}
+
+.parrafo-dos {
+  grid-area: texto2;
+}
+
+.parrafo-tres {
+  grid-area: texto3;
+}
+
+// IMAGEN
+.pcingles {
+  width: 100%;
+}

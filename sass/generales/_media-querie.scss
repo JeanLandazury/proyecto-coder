@@ -1,13 +1,44 @@
+@use "./variables" as*;
+@use "./header-footer" as*;
 
+// MEDIA QUERIES
 @media (max-width: 480px) {
-  header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        nav{
-        width: 80%;
-      }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-      }
+    ul {
+      margin-right: 0%;
+    }
+  }
 
+  nav {
+    width: 80%;
+    
+   
+  
+    
+  }
+
+  
+
+  .presentacion {
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+      color: rgba(131, 182, 29, 0.255);
+      font-weight: bold;
+    }
+  }
+
+  body {
+    background-color: lightskyblue;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: lightcoral;
+  }
 }

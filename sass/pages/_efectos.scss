@@ -1,0 +1,19 @@
+@use "../generales/header-footer" as*;
+@use "../generales/variables" as*;
+// EFECTOS
+.trasladar {
+  margin-top: 20px;
+  border: black solid 5px;
+  background-image: url(../img-coder-house/ingles.png);
+  background-size: cover;
+
+  @include hover-transform(translate(-50px, -60px));
+}
+
+.rotar {
+  @include hover-transform(rotate(45deg));
+}
+
+.sesgar {
+  @include hover-transform(skew(-20deg, -35deg));
+}

@@ -1,0 +1,15 @@
+@use "../generales/header-footer" as*;
+@use "../generales/variables" as*;
+// ICONOS
+.icono-red {
+  width: 100px;
+  height: 100px;
+  background-color: $color-header;
+}
+
+.wp {
+  width: 50px;
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+}

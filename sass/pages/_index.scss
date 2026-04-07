@@ -1,4 +1,5 @@
-@use "../generales/variables" as *;
+@use "../generales/header-footer" as*;
+@use "../generales/variables" as*;
 
 .presentacion {
   background-image: url(../img-coder-house/fondo-pc.jpeg);
@@ -10,7 +11,7 @@
     width: 30%;
     text-align: center;
 
-    @include flex-sin;
+  
 
     h1 {
       text-align: center;

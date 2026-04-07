@@ -1,3 +1,22 @@
+
+
+
+// VARIABLES
+$color-principal: #6344ff;
+$color-secundario: rgb(220, 20, 27);
+$color-verde: rgb(17, 128, 0);
+$color-header: lightsalmon;
+$color-link: rgb(17, 106, 141);
+$color-blueviolet: blueviolet;
+$fuente: "Oswald", sans-serif;
+
+
+// MAIN
+main {
+  color: $color-blueviolet;
+}
+
+
 // paleta de colores 
 
 $bordo:#8E1616;
@@ -25,54 +44,3 @@ $font: family "Oswald", sans-serif;
 //     background-color: $amarillo;
 //    border:rgb(95, 193, 16) 2px soliod ;
 //    color: $bordo;
-// 
-
-// mixin
-// sin  parametros 
-
-$flex: flex;
-$center: center;
-
-/* MIXIN */
-@mixin flex-sin {
-  display: $flex;
-  justify-content: $center;
-  align-items: $center;
-}
-
-ul{
-    @include flex-sin;
-}
-
-
-// mixin
-// con  parametros   solo dentro del mixin
-
-@mixin flex-con ($direc, $justi, $align){
-    display: $flex;
-    flex-direction: $direc;
-    justify-content: $justi;
-    align-items: $align;
-
-}
-
-section{
-    @include flex-con (row, flex-start ,space-around )
-}
-
-header{
-    @include flex-con(column,center,flex-end )
-}
-
-@mixin tamanio ($ancho, $alto){
-width: $ancho;
-height: $alto;
-}
-
-img{
-    @include tamanio( 40%, auto);
-}
-
-card{
-    @include tamanio ( 500px, 200px);
-}

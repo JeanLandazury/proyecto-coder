@@ -1,0 +1,25 @@
+@use "./header-footer" as*;
+@use "./variables" as*;
+
+// ANIMACION
+@keyframes efecto {
+  0% {
+    color: $color-principal;
+    transform: translateX(20px);
+  }
+  25% {
+    color: salmon;
+    transform: translateX(40px);
+  }
+  50% {
+    color: slateblue;
+    transform: translateX(60px);
+  }
+  75% {
+    color: sienna;
+    transform: rotate(20deg);
+  }
+  100% {
+    color: slategray;
+  }
+}

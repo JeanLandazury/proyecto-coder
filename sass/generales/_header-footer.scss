@@ -2,41 +2,39 @@
 
 @use "./variables" as*;
 
-
+// HEADER
 header {
   display:flex;
-  justify-content: space-between;
-  position:sticky;
-  top:0;
-  background-color: lightsalmon;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    background-color: lightsalmon;
 
   .logo {
     width: 150px;
     margin: 10px;
   }
 
-  nav {
-    width: 25%;
-    text-decoration: salmon;
-    text-shadow: 1px 1px 4px;
-    text-transform: uppercase; }
-
-   ul{
-    list-style: none ;
+  ul {
+    list-style: none;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-
-    li{
-
-      a{
-    width: 25%;
-        text-decoration: salmon;
-         text-shadow: 1px 1px 4px;
-             text-transform: uppercase;
-    }
   }
-}
+  a {
+    color: rgb(17, 106, 141);
+    text-decoration: none;
+    font-size: large;
+  }
 
+  nav {width: 25%;}
+  a {
+    
+    text-decoration: salmon;
+    text-shadow: 1px 1px 4px;
+    text-transform: uppercase;
+  
 }
+  
+  }

@@ -1,0 +1,16 @@
+@use "../generales/header-footer" as*;
+@use "../generales/variables" as*;
+@use "./variables" as*;
+// TEXTO
+p {
+  color: $color-principal;
+  text-decoration: underline;
+}
+
+.texto-Verde {
+  color: $color-verde;
+}
+p {
+    color: #6344ff;
+    font-family: "Oswald", sans-serif;
+}

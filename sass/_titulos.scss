@@ -1,0 +1,84 @@
+@use "../generales/header-footer" as*;
+@use "../generales/variables" as*;
+// TITULOS
+
+// Estilos para h1
+h1 {
+  color: rgb(128, 0, 0)
+  text-shadow: 4px 1px 4px
+  margin-bottom: 20%
+  font-size: 3rem
+  text-transform: uppercase
+  animation-name: efecto
+  animation-iteration-count: infinite
+  animation-delay: 0s
+  animation-duration: 4s
+
+  // Animación de h1
+  @keyframes efecto {
+    0% {
+      color: #6344ff
+      transform: translateX(20px)
+    }
+    25% {
+      color: salmon
+      transform: translateX(40px)
+    }
+    50% {
+      color: slateblue
+      transform: translateX(60px)
+    }
+    75% {
+      color: sienna
+      transform: rotate(20deg)
+    }
+    100% {
+      color: slategray
+    }
+  }
+
+  &:hover {
+    color: mediumblue
+    transition: 2s
+  }
+}
+
+// Estilos para .trasladar
+.trasladar {
+  margin-top: 20px
+  border: 5px solid black
+  background-image: url(../img-coder-house/ingles.png)
+  background-size: cover
+
+  &:hover {
+    transform: translate(-50px, -60px)
+    transition: 2s
+  }
+}
+
+// Estilos para .rotar
+.rotar {
+  &:hover {
+    transform: rotate(45deg)
+  }
+}
+
+// Estilos para .sesgar
+.sesgar {
+  &:hover {
+    transform: skew(-20deg, -35deg)
+  }
+}
+
+// Estilos para .presentacion h1
+.presentacion h1 {
+  text-align: center
+  text-decoration: underline
+  color: red
+  font-weight: bold
+}
+
+// Clase .h-1
+.h-1 {
+  color: blue
+}

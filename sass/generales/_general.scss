@@ -1,4 +1,5 @@
 @use "./variables" as*;
+@use "./header-footer" as*;
 
 *{
     margin: 0;
@@ -9,4 +10,8 @@
 body{
       font-family: $font;
       background-color: $blanco;
-}
+
+      $rojo: rgb(220, 20, 27) }
+
+
+

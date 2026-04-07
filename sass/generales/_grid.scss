@@ -1,0 +1,19 @@
+@use "./variables" as*;
+@use "./header-footer" as*;
+// GRID
+.contenedor-grid {
+  display: grid;
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+
+  grid-template-areas:
+    "titulo titulo titulo"
+    "pc texto1 texto1"
+    "pc sistemas texto2"
+    "pc texto3 texto3";
+
+  grid-template-columns: 20% 30% 30%;
+  grid-template-rows: 100px 120px 200px 120px;
+  
+}
