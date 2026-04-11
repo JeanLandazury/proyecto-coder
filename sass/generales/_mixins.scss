@@ -1,35 +1,32 @@
 @use "./variables" as*;
-@use "./header-footer" as*;
+
 // MIXINS
 
+// 1. Mixin animaciones 
 @mixin hover-transform($transform) {
+  transition: transform 2s ease; 
   &:hover {
     transform: $transform;
-    transition: 2s;
   }
 }
 
-// Mixin flex-sin sin parámetros
-
-
+// 2. Mixin flex-sin 
 @mixin flex-sin {
-  display: $flex;
+  display: flex;
   flex-direction: row;
-  justify-content: $center;
-  align-items: $center;
-  $flex: flex;
-$center: center;
+  justify-content: center;
+  align-items: center;
 }
 
-// Mixin flex-con con parámetros
+// 3. Mixin flex-con 
 @mixin flex-con($direc, $justi, $align) {
-  display: $flex;
+  display: flex; 
   flex-direction: $direc;
   justify-content: $justi;
   align-items: $align;
 }
 
-// Mixin tamanio
+// 4. Mixin tamanio
 @mixin tamanio($ancho, $alto) {
   width: $ancho;
   height: $alto;
